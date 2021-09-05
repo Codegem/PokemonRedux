@@ -18,7 +18,7 @@ export const GetPokemonList = (page) => async (dispatch) => {
   } catch (e) {
     dispatch({
       type: "POKEMON_LIST_FAIL",
-    });§
+    });
   }
 };
 

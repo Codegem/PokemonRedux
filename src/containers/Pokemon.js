@@ -16,8 +16,8 @@ const Pokemon = (props) => {
       const pokeData = pokemonState.data[pokemonName];
       return (
         <div className="pokemon-wrapper">
+          <h1>{pokemonName}</h1>
           <div className="item">
-            <h1 style={{ textTransform: "uppercase" }}>{pokemonName}</h1>
             {Object.values(pokeData.sprites).map((sprite, key) => {
               if (sprite !== null) {
                 return <img src={sprite} alt="" key={key} />;
